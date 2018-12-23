@@ -1,0 +1,18 @@
+{
+    "format_version": 1,
+    "header": {
+        "description": "Small UI tweaks",
+        "name": "Bedrock UI Tweaks",
+        "uuid": "d31512a0-06cb-11e9-8a3f-000c2990bea9",
+        "version": @SEMVER_TRIPLE@,
+        "min_engine_version": [1, 8, 0]
+    },
+    "modules": [
+        {
+            "description": "Small UI tweaks",
+            "type": "resources",
+            "uuid": "dc36811c-06cb-11e9-8a3f-000c2990bea9",
+            "version": @SEMVER_TRIPLE@
+        }
+    ]
+}
