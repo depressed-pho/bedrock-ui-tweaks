@@ -6,6 +6,7 @@
 Features:
 
 * Remove the "How to play" button from the inventory screen for Pocket UI.
+* Remove the "New!" and "Sale!" icons from the startup screen.
 
 ## Download
 

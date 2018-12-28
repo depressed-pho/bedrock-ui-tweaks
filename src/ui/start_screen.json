@@ -31,12 +31,6 @@
     "size": [ 32, 16 ]
   },
 
-  "new_offers_icon@common_store.new_offer_icon": {
-    "layer": 11, // This is the lowest layer where the button border won't show through this icon while being pressed
-    "anchor_from": "top_right",
-    "anchor_to": "top_right"
-  },
-
   "beta_icon@common_store.beta_icon": {
     "layer": 11, // This is the lowest layer where the button border won't show through this icon while being pressed
     "anchor_from": "top_right",
@@ -51,13 +45,6 @@
     "anchor_to": "top_right",
     "size": [ 11, 21 ]
   },
-
-  "sale_ribbon_icon": {
-    "type": "image",
-    "texture": "textures/ui/saleribbon",
-    "layer": 12 // This is the lowest layer where the button border won't show through this icon while being pressed
-  },
-
   "copyright": {
     "type": "label",
     "color": "$main_header_text_color",
@@ -570,30 +557,6 @@
     "$button_text_grid_collection_name": ""
   },
 
-  "store_button_sale_banner@start.sale_ribbon_icon": {
-    "size": [ "100%c", 16 ], // For some reason doing 100%c + X doesn't work on an image?
-    "controls": [
-      {
-        "banner_label_padding": {
-          "type": "panel",
-          "size": [ "100%c + 12px", "100%" ],
-          "controls": [
-            {
-              "banner_label": {
-                "type": "label",
-                "size": [ "default", 10 ],
-                "offset": [ -1, -1 ],
-                "text": "store.startMenu.sale",
-                "color": "$title_text_color",
-                "layer": 1
-              }
-            }
-          ]
-        }
-      }
-    ]
-  },
-
   "store_button_content": {
     "type": "panel",
     "controls": [
@@ -601,30 +564,8 @@
         "button_label@common_buttons.new_ui_binding_button_label": {
           "layer": 5
         }
-      },
-      {
-        "sales_banner@start.store_button_sale_banner": {
-          "anchor_from": "top_left",
-          "anchor_to": "top_left",
-          "offset": [ -6, -8 ],
-          "bindings": [
-            {
-              "binding_name": "#sale_visible",
-              "binding_name_override": "#visible"
-            }
-          ]
-        }
       }
     ]
-  },
-
-  "store_sale_label": {
-    "type": "label",
-    "size": [ "default", 10 ],
-    "offset": [ 4, 0 ],
-    "text": "store.startMenu.sale",
-    "color": "$light_button_default_text_color",
-    "layer": 2
   },
 
   "buy_game_button@start.main_button": {
@@ -779,19 +720,6 @@
                                     }
                                   ]
                                 }
-                              },
-                              {
-                                "new_offers_icon@start.new_offers_icon": {
-                                  "offset": [ 8, -6 ],
-                                  "anchor_from": "top_right",
-                                  "anchor_to": "top_right",
-                                  "bindings": [
-                                    {
-                                      "binding_name": "#new_offers",
-                                      "binding_name_override": "#visible"
-                                    }
-                                  ]
-                                }
                               }
                             ]
                           }
@@ -868,19 +796,6 @@
                           "binding_name": "#update_icon_visible",
                           "binding_name_override": "#visible",
                           "binding_condition": "always"
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "new_offers_icon@start.new_offers_icon": {
-                      "offset": [ 8, -6 ],
-                      "anchor_from": "top_right",
-                      "anchor_to": "top_right",
-                      "bindings": [
-                        {
-                          "binding_name": "#new_offers",
-                          "binding_name_override": "#visible"
                         }
                       ]
                     }
