@@ -5,7 +5,8 @@ MCPACK_FILES = \
 	manifest.json \
 	pack_icon.png \
 	ui/inventory_screen.json \
-	ui/inventory_screen_pocket.json
+	ui/inventory_screen_pocket.json \
+	ui/start_screen.json
 
 CLEANFILES=
 EXTRA_DIST=
