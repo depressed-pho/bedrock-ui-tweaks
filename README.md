@@ -12,6 +12,10 @@ Features:
 
 See [releases](https://github.com/depressed-pho/bedrock-ui-tweaks/releases).
 
+## Release notes
+
+See [NEWS](NEWS.md).
+
 ## Tested on
 
 * Minecraft Bedrock 1.8, iPad Pro (MLMY2J/A), iOS 12.1 (16B92)
