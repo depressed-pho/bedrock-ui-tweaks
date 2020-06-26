@@ -5,8 +5,13 @@
 
 Features:
 
-* Remove the "How to play" button from the inventory screen for Pocket UI.
-* Remove the "New!" and "Sale!" icons from the startup screen.
+* Remove the "How to play" button from the inventory screen for Pocket
+  UI. It's really easy to mistap the button in an attempt to tap
+  somewhere else.
+* Remove animations from the "Marketplace" button on the startup
+  screen. Its style is way too inconsistent with other buttons and is
+  therefore very distracting. The pack also removes "New!" and "Sale!"
+  icons attached to it.
 
 ## Download
 
@@ -16,9 +21,13 @@ See [releases](https://github.com/depressed-pho/bedrock-ui-tweaks/releases).
 
 See [NEWS](NEWS.md).
 
+## Technical details
+
+See [HACKING](HACKING.md).
+
 ## Tested on
 
-* Minecraft Bedrock 1.8, iPad Pro (MLMY2J/A), iOS 12.1 (16B92)
+* Minecraft Bedrock 1.16, iPad Pro (MLMY2J/A), iOS 12.1 (16B92)
 
 ## Author
 

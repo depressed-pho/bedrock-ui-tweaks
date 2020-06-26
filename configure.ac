@@ -3,7 +3,7 @@
 
 AC_PREREQ([2.69])
 AC_INIT([Bedrock UI Tweaks],
-        [1.1.0],
+        [1.1.1],
         [https://github.com/depressed-pho/bedrock-ui-tweaks/issues],
         [],
         [https://github.com/depressed-pho/bedrock-ui-twekas])
@@ -17,12 +17,18 @@ AM_SILENT_RULES([yes])
 
 # Checks for options.
 AX_MCPACK_INSTALLATION_DIRECTORY([resource])
+AX_MCPACK_GENERATE_DIFF_FILE([no])
 
 # Checks for programs.
 AC_ARG_VAR([SED], [The sed command @<:@autodetected@:>@])
 AC_PROG_SED
 AS_IF([test "x$SED" = x],
       [AC_MSG_ERROR([You need to install a sed command.])])
+
+AC_ARG_VAR([JQ], [The jq command @<:@autodetected@:>@])
+AC_CHECK_PROGS([JQ], [jq])
+AS_IF([test "x$JQ" = x],
+      [AC_MSG_ERROR([You need to install the jq command.])])
 
 AC_ARG_VAR([ZIP], [The Info-Zip zip command @<:@autodetected@:>@])
 AC_CHECK_PROGS([ZIP], [zip])
@@ -51,6 +57,5 @@ AS_IF([test x"$INKSCAPE" = x],
 AC_CONFIG_FILES([
     Makefile
     src/Makefile
-    orig/Makefile
 ])
 AC_OUTPUT
