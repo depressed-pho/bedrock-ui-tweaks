@@ -63,7 +63,7 @@ In this case the only way to modify `.../store/store_button` is to
 redefine `.../store` entirely.
 
 
-## Apparent hard-coded behavior
+## Apparent hard-coded behaviors
 
 The animated "Marketplace" button on the startup screen appears to be
 hard-coded in a strange way. If you override some properties by
