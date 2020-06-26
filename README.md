@@ -7,11 +7,11 @@ Features:
 
 * Remove the "How to play" button from the inventory screen for Pocket
   UI. It's really easy to mistap the button in an attempt to tap
-  somewhere else.
+  somewhere else, especially the close button.
 * Remove animations from the "Marketplace" button on the startup
   screen. Its style is way too inconsistent with other buttons and is
-  therefore very distracting. The pack also removes "New!" and "Sale!"
-  icons attached to it.
+  very distracting. The pack also removes "New!" and "Sale!"  icons
+  attached to it.
 
 ## Download
 
