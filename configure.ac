@@ -6,7 +6,7 @@ AC_INIT([Bedrock UI Tweaks],
         [1.2],
         [https://github.com/depressed-pho/bedrock-ui-tweaks/issues],
         [],
-        [https://github.com/depressed-pho/bedrock-ui-twekas])
+        [https://github.com/depressed-pho/bedrock-ui-tweaks])
 AM_INIT_AUTOMAKE([1.9])
 AC_CONFIG_SRCDIR([src/manifest.json.in])
 AC_CONFIG_MACRO_DIR([m4])
