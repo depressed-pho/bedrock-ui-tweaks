@@ -1,5 +1,12 @@
 # Release notes
 
+## 1.2
+
+* Reordered the left panel in the "Servers" tab. Additional servers
+  come first, featured servers go last. When a player manually adds a
+  server to the list, they do so because they want to join it. Pushing
+  additional servers down the scroll is therefore nonsensical.
+
 ## 1.1.1
 
 * Fixed a button "Unlock Full Game" being shown on 1.16 even if you

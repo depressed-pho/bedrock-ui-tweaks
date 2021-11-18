@@ -6,10 +6,21 @@ MCPACK_FILES = \
 	pack_icon.png \
 	ui/inventory_screen.json \
 	ui/inventory_screen_pocket.json \
+	ui/play_screen.json \
 	ui/start_screen.json
 
 EXTRA_DIST= \
 	ui-tweaks.svg
+
+# Strip comments from JSON.
+%.json: %.json.in Makefile
+	$(AM_V_GEN)
+	$(AM_V_at)set -eu; \
+	$(MKDIR_P) "$(dir $@)"; \
+	$(SED) \
+		-e "/^[ 	]*\/\//d" \
+		< $< > $@.tmp; \
+	mv $@.tmp $@
 
 pack_icon.png: ui-tweaks.svg
 	$(AM_V_GEN)

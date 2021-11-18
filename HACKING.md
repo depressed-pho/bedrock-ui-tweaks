@@ -15,9 +15,11 @@ inconvenient during development.
 
 ## Inability to remove controls by array modifications
 
-The documentation says you can remove elemnts from an array with the
-`modifications` property, but you can't use it for removing controls
-from existing components. I mean, this has no effects:
+The
+[documentation](https://minecraft.fandom.com/wiki/Tutorials/Bedrock_Edition_creator_guidelines#UI)
+says you can remove elemnts from an array with the `modifications`
+property, but you can't use it for removing controls from existing
+components. I mean, this has no effects:
 
 ```json
 {

@@ -12,6 +12,7 @@ Features:
   screen. Its style is way too inconsistent with other buttons and is
   very distracting. The pack also removes "New!" and "Sale!"  icons
   attached to it.
+* Reorder the server list so that manually added servers come first.
 
 ## Download
 

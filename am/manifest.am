@@ -11,12 +11,14 @@ manifest.json: $(MANIFEST_SRC) Makefile
 	set -- $$tmp; \
 	IFS="$$OIFS"; \
 	\
-	if [ $$# -eq 3 ]; then \
-		semver_triple="[$$1, $$2, $$3]"; \
-	else \
-		echo >&2 "$(PACKAGE_VERSION) is not a semver"; \
-		exit 1; \
-	fi; \
+	case $$# in \
+		1) semver_triple="[$$1, 0, 0]";; \
+		2) semver_triple="[$$1, $$2, 0]";; \
+		3) semver_triple="[$$1, $$2, $$3]";; \
+		*) \
+			echo >&2 "$(PACKAGE_VERSION) is not a semver"; \
+			exit 1;; \
+	esac; \
 	\
 	rm -f $@ $@.tmp; \
 	$(SED) \
