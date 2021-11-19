@@ -1,5 +1,10 @@
 # Release notes
 
+## 1.2.1
+
+* Moved the "Add Server" button right below the list of additional
+  servers.
+
 ## 1.2
 
 * Reordered the left panel in the "Servers" tab. Additional servers
