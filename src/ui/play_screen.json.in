@@ -1,251 +1,93 @@
 {
     "namespace": "play",
 
+    // We want the "Add Server" button to appear right below the additional
+    // server list, so we remove it from the outermost panel.
+    "server_scroll_panel/stack_panel/add_server_button": {
+        "ignored": true
+    },
+
     // Reorder the server list. Additional servers first, featured
     // servers last. The array modification syntax doesn't support
     // reordering, so we need to redefine the entire control.
-    "server_scroll_panel/stack_panel": {
+    "servers_content_panel": {
         "controls": [
             {
-                "padding_0": {
-                    "type": "panel",
-                    "size": [ "100%", 3 ]
-                }
+                "more_servers_panel@play.manually_added_servers_scrolling_content": {}
             },
             {
-                "servers_crossplatform_disabled_panel@play.crossplatform_disabled_panel": {
-                    "$cross_platform_information_text": "crossPlatformToggle.crossPlatformDisabled.servers"
-                }
+                "add_server_button@play.add_server_toggle_button": {}
             },
             {
-                "no_featured_server_connection@play.information_panel": {
-                    "ignored": "(not $is_ps4)",
-                    "$information_label_font": "smooth",
-                    "$information_panel_label_text": "#internet_connection_text",
-                    "$information_panel_label_text_binding_type": "global",
-                    "$information_panel_label_text_binding_condition": "always_when_visible",
-                    "bindings": [
-                        {
-                            "binding_name": "(not #is_network_available)",
-                            "binding_name_override": "#visible"
-                        }
-                    ]
-                }
+                "more_servers_divider@common.horizontal_divider": {}
             },
             {
-                "more_servers_blocked_panel": {
+                "featured_servers_panel": {
                     "type": "stack_panel",
-                    "size": [
-                        "100%",
-                        "100%c"
-                    ],
-                    "orientation": "vertical",
-                    "visible": false,
-                    "ignored": "($ignore_add_servers or $ignore_3rd_party_servers)",
-                    "bindings": [
-                        {
-                            "binding_name": "#multiplayer_blocked_panel_visible",
-                            "binding_name_override": "#visible"
-                        }
-                    ],
+                    "size": [ "100%", "100%c" ],
+                    "ignored": "$ignore_3rd_party_servers",
+                    "$third_party_featured_servers": "thirdPartyWorld.Featured",
+                    "$focus_id": "featured_servers_panel",
                     "controls": [
                         {
-                            "server_multiplayer_privileges_blocked@play.information_panel": {
-                                "$information_label_font": "smooth",
-                                "$information_panel_label_text": "#multiplayer_blocked_text",
-                                "$information_panel_label_text_binding_type": "global",
-                                "$information_panel_label_text_binding_condition": "always_when_visible",
-                                "ignored": "($ignore_add_servers or $ignore_3rd_party_servers)"
-                            }
-                        },
-                        {
-                            "open_uri_button@play.open_account_setting_button": {
-                            }
-                        }
-                    ]
-                }
-            },
-            {
-                "padding_1": {
-                    "type": "panel",
-                    "size": [ "100%", 3 ]
-                }
-            },
-            {
-                "servers_panel": {
-                    "type": "stack_panel",
-                    "orientation": "vertical",
-                    "size": [
-                        "100%",
-                        "100%c"
-                    ],
-                    "$focus_id": "left_panel",
-                    "controls": [
-                        {
-                            "more_servers_panel": {
-                                "type": "stack_panel",
-                                "ignored": "($ignore_add_servers or $ignore_3rd_party_servers)",
-                                "size": [
-                                    "100%",
-                                    "100%c"
+                            "loading_featured_panel@play.label_background": {
+                                "size": [ "100%", 40 ],
+                                "controls": [
+                                    {
+                                        "loading_friends_realms_label@play.light_loading_label": {
+                                            "$label_text": "thirdPartyWorld.loadingFeaturedServers"
+                                        }
+                                    },
+                                    {
+                                        "loading_featured_servers_panel@play.loading_featured_servers_panel": {}
+                                    }
+
+
                                 ],
                                 "bindings": [
                                     {
-                                        "binding_name": "#is_network_available_and_multiplayer_visible",
+                                        "binding_name": "#loading_servers_progress_visible",
                                         "binding_name_override": "#visible"
-                                    }
-                                ],
-                                "$tts_section_header": "networkWorld.more_servers",
-                                "controls": [
-                                    {
-                                        "more_servers_label@common.minecraftTenLabel": {
-                                            "size": [
-                                                "default",
-                                                "default"
-                                            ],
-                                            "text": "thirdPartyWorld.Additional",
-                                            "color": "$dark_button_default_text_color",
-                                            "bindings": [
-                                                {
-                                                    "binding_name": "#is_additional_server_label_visible",
-                                                    "binding_name_override": "#visible"
-                                                }
-                                            ]
-                                        }
-                                    },
-                                    {
-                                        "padding_1": {
-                                            "type": "panel",
-                                            "size": [
-                                                "100%",
-                                                2
-                                            ]
-                                        }
-                                    },
-                                    {
-                                        "more_servers_grid@play.more_servers_grid": {
-                                        }
-                                    },
-                                    {
-                                        "padding_3": {
-                                            "type": "panel",
-                                            "size": [
-                                                "100%",
-                                                4
-                                            ],
-                                            "bindings": [
-                                                {
-                                                    "binding_name": "#servers_grid_visible",
-                                                    "binding_name_override": "#visible"
-                                                }
-                                            ]
-                                        }
-                                    },
-                                    {
-                                        "add_server_button@play.add_server_toggle_button": {}
                                     }
                                 ]
                             }
                         },
                         {
-                            "featured_servers_panel": {
-                                "type": "stack_panel",
-                                "size": [
-                                    "100%",
-                                    "100%c"
-                                ],
-                                "ignored": "$ignore_3rd_party_servers",
-                                "$third_party_featured_servers": "thirdPartyWorld.Featured",
-                                "$focus_id": "featured_servers_panel",
-                                "controls": [
-                                    {
-                                        "more_servers_divider@common.horizontal_divider": {
-                                        }
-                                    },
-                                    {
-                                        "padding_0": {
-                                            "type": "panel",
-                                            "size": [
-                                                "100%",
-                                                2
-                                            ]
-                                        }
-                                    },
-                                    {
-                                        "loading_featured_panel@play.label_background": {
-                                            "size": [
-                                                "100%",
-                                                40
-                                            ],
-                                            "controls": [
-                                                {
-                                                    "loading_friends_realms_label@play.light_loading_label": {
-                                                        "$label_text": "thirdPartyWorld.loadingFeaturedServers"
-                                                    }
-                                                },
-                                                {
-                                                    "loading_featured_servers_panel@play.loading_featured_servers_panel": {
-                                                    }
-                                                }
-                                            ],
-                                            "bindings": [
-                                                {
-                                                    "binding_name": "#loading_servers_progress_visible",
-                                                    "binding_name_override": "#visible"
-                                                }
-                                            ]
-                                        }
-                                    },
-                                    {
-                                        "padding_1": {
-                                            "type": "panel",
-                                            "size": [
-                                                "100%",
-                                                2
-                                            ]
-                                        }
-                                    },
-                                    {
-                                        "featured_servers_label@common.minecraftTenLabel": {
-                                            "size": [
-                                                "default",
-                                                "default"
-                                            ],
-                                            "text": "thirdPartyWorld.Featured",
-                                            "color": "$dark_button_default_text_color"
-                                        }
-                                    },
-                                    {
-                                        "padding_2": {
-                                            "type": "panel",
-                                            "size": [
-                                                "100%",
-                                                2
-                                            ]
-                                        }
-                                    },
-                                    {
-                                        "third_party_featured_grid@play.third_party_featured_server_grid": {
-                                            "$tts_section_header": "$third_party_featured_servers"
-                                        }
-                                    },
-                                    {
-                                        "padding_3": {
-                                            "type": "panel",
-                                            "size": [
-                                                "100%",
-                                                2
-                                            ]
-                                        }
-                                    }
-                                ],
-                                "bindings": [
-                                    {
-                                        "binding_name": "#featured_servers_visible_and_available",
-                                        "binding_name_override": "#visible"
-                                    }
-                                ]
+                            "padding_1": {
+                                "type": "panel",
+                                "size": [ "100%", 2 ]
                             }
+                        },
+                        {
+                            "featured_servers_label@common.minecraftTenLabel": {
+                                "size": [ "default", "default" ],
+                                "text": "thirdPartyWorld.Featured",
+                                "color": "$dark_button_default_text_color"
+                            }
+                        },
+                        {
+                            "padding_2": {
+                                "type": "panel",
+                                "size": [ "100%", 2 ]
+                            }
+                        },
+                        {
+                            "third_party_featured_grid@play.third_party_featured_server_grid": {
+                                "$tts_section_header": "$third_party_featured_servers"
+                            }
+
+                        },
+                        {
+                            "padding_3": {
+                                "type": "panel",
+                                "size": [ "100%", 2 ]
+                            }
+                        }
+                    ],
+                    "bindings": [
+                        {
+                            "binding_name": "#featured_servers_visible_and_available",
+                            "binding_name_override": "#visible"
                         }
                     ]
                 }
