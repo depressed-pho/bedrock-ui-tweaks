@@ -40,7 +40,7 @@ $(pack_base).diff: $(MCPACK_FILES)
 endif
 
 .PHONY: validate-json
-validate-json:
+validate-json: $(filter %.json,$(MCPACK_FILES))
 	@set -eu; \
 	for f in $(filter %.json,$(MCPACK_FILES)); do \
 		( \
@@ -67,9 +67,9 @@ $(pack_name): $(pack_files) $(MCPACK_EXTRA_FILES) validate-json
 # $(srcdir) or $(builddir).
 	$(AM_V_at)for f in $(pack_files); do \
 		if test -f "$(srcdir)/$$f"; then \
-			echo "-C $(srcdir)"; \
+			echo "-C"; echo "$(abs_srcdir)"; \
 		else \
-			echo "-C $(builddir)"; \
+			echo "-C"; echo "$(abs_builddir)"; \
 		fi; \
 		echo "$$f"; \
 	done | tar -cf - -T - | tar -xf - -C $(pack_base)

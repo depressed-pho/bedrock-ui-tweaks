@@ -1,0 +1,7 @@
+{
+    "namespace": "loom_pocket",
+
+    "right_navigation_tabs/pocket_tab_help_button": {
+        "ignored": true
+    }
+}

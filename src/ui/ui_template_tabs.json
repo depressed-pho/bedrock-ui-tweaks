@@ -1,0 +1,15 @@
+{
+    "namespace": "common_tabs",
+
+    "pocket_tab_close_and_help_button": {
+        "size": ["100%", 33 ]
+    },
+
+    "pocket_tab_close_and_help_button/help_button": {
+        "ignored": true
+    },
+
+    "tab_close_and_help_button/help_button": {
+        "ignored": true
+    }
+}

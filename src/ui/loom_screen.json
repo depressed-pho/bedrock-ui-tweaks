@@ -1,5 +1,5 @@
 {
-    "namespace": "crafting",
+    "namespace": "loom",
 
     "toolbar_panel/toolbar_background/toolbar_stack_panel/help_button_panel": {
         "ignored": true

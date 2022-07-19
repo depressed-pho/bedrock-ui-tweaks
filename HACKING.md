@@ -2,8 +2,7 @@
 
 The [JSON UI
 system](https://minecraft.gamepedia.com/Tutorials/Bedrock_Edition_creator_guidelines#UI)
-in Bedrock is a total mess (which is probably why they decided to use
-HTML5 for custom UIs).
+in Bedrock is a total mess.
 
 
 ## Changes don't take effect until you restart the app

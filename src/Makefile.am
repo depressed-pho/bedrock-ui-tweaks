@@ -5,9 +5,12 @@ MCPACK_FILES = \
 	manifest.json \
 	pack_icon.png \
 	ui/inventory_screen.json \
-	ui/inventory_screen_pocket.json \
+	ui/loom_screen.json \
+	ui/loom_screen_pocket.json \
 	ui/play_screen.json \
-	ui/start_screen.json
+	ui/start_screen.json \
+	ui/stonecutter_screen.json \
+	ui/ui_template_tabs.json
 
 EXTRA_DIST= \
 	ui-tweaks.svg
@@ -24,7 +27,7 @@ EXTRA_DIST= \
 
 pack_icon.png: ui-tweaks.svg
 	$(AM_V_GEN)
-	$(AM_V_at)$(INKSCAPE) --export-png="$@" --export-width=128 --export-height=128 "$<"
+	$(AM_V_at)$(INKSCAPE) -o "$@" --export-width=128 --export-height=128 "$<"
 
 CLEANFILES=
 noinst_DATA=

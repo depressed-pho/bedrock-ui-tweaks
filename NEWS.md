@@ -1,5 +1,11 @@
 # Release notes
 
+## 1.2.2
+
+* Updated for Minecraft Bedrock 1.19.10.
+* Removed the "How to play" button from the Stonecutter, Cartgraphy, and
+  the Loom UI.
+
 ## 1.2.1
 
 * Moved the "Add Server" button right below the list of additional
