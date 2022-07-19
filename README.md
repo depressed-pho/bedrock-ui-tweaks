@@ -28,12 +28,17 @@ See [HACKING](HACKING.md).
 
 ## Tested on
 
-* Minecraft Bedrock 1.16, iPad Pro (MLMY2J/A), iOS 12.1 (16B92)
+* Minecraft Bedrock 1.19.10, M1 iPad Pro (11-inch, 3rd generation, model MHQU3J/A)
 
 ## Author
 
 PHO
 
 ## License
+
 [CC0](https://creativecommons.org/share-your-work/public-domain/cc0/)
 “No Rights Reserved”
+
+## See also
+
+* Hidden Features: https://mcpedl.com/hidden-features/
