@@ -7,6 +7,7 @@ MCPACK_FILES = \
 	ui/inventory_screen.json \
 	ui/loom_screen.json \
 	ui/loom_screen_pocket.json \
+	ui/pause_screen.json \
 	ui/play_screen.json \
 	ui/start_screen.json \
 	ui/stonecutter_screen.json \

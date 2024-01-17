@@ -12,7 +12,13 @@ Features:
   screen. Its style is way too inconsistent with other buttons and is
   very distracting. The pack also removes "New!" and "Sale!"  icons
   attached to it.
-* Reorder the server list so that manually added servers come first.
+* Remove the "Marketplace" button from the pause screen. There is
+  absolutely no reason why a player would want to buy products while
+  they're pausing.
+* Reorder the server list so that manually added servers come first. When a
+  player manually adds a server to the list, they do so because they want
+  to join it. Pushing additional servers down the scroll is therefore
+  nonsensical.
 
 ## Download
 
@@ -28,7 +34,7 @@ See [HACKING](HACKING.md).
 
 ## Tested on
 
-* Minecraft Bedrock 1.19.10, M1 iPad Pro (11-inch, 3rd generation, model MHQU3J/A)
+* Minecraft Bedrock 1.20.51, M1 iPad Pro
 
 ## Author
 

@@ -1,5 +1,9 @@
 # Release notes
 
+## 1.2.3
+
+* Removed the "Marketplace" button from the pause screen.
+
 ## 1.2.2
 
 * Updated for Minecraft Bedrock 1.19.10.
