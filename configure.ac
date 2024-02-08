@@ -3,7 +3,7 @@
 
 AC_PREREQ([2.69])
 AC_INIT([Bedrock UI Tweaks],
-        [1.2.3],
+        [1.2.4],
         [https://github.com/depressed-pho/bedrock-ui-tweaks/issues],
         [],
         [https://github.com/depressed-pho/bedrock-ui-tweaks])

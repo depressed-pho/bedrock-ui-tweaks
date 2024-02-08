@@ -1,5 +1,9 @@
 # Release notes
 
+## 1.2.4
+
+* Updated for Minecraft Bedrock 1.20.60.
+
 ## 1.2.3
 
 * Removed the "Marketplace" button from the pause screen.
