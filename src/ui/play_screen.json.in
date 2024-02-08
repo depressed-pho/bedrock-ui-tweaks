@@ -1,6 +1,12 @@
 {
     "namespace": "play",
 
+    // Remove Realms from the local world list. Realms can be subscribed in
+    // the Marketplace screen and there's no reason to have a button here.
+    "worlds_stack_panel/realms_panel": {
+        "ignored": true
+    },
+
     // We want the "Add Server" button to appear right below the additional
     // server list, so we remove it from the outermost panel.
     "server_scroll_panel/stack_panel/add_server_button": {

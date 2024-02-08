@@ -19,6 +19,9 @@ Features:
   player manually adds a server to the list, they do so because they want
   to join it. Pushing additional servers down the scroll is therefore
   nonsensical.
+* Remove the button for subscribing to Realms that is shown in the list of
+  local worlds. When a player wants to enter their local world, there is
+  hardly any reason to remind that they can subscribe to Realms.
 
 ## Download
 

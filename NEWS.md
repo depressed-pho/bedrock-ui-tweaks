@@ -3,6 +3,8 @@
 ## 1.2.4
 
 * Updated for Minecraft Bedrock 1.20.60.
+* Removed the button for subscribing to Realms that is shown in the list of
+  local worlds.
 
 ## 1.2.3
 
