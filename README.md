@@ -22,6 +22,10 @@ Features:
 * Remove the button for subscribing to Realms that is shown in the list of
   local worlds. When a player wants to enter their local world, there is
   hardly any reason to remind that they can subscribe to Realms.
+* Remove Marketplace templates from the "Create New World" screen. Owned
+  templates are shown separately, and no one would want to buy a template
+  when their intention is to create a world either from scratch or from
+  their owned template.
 
 ## Download
 

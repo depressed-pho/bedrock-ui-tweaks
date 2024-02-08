@@ -10,7 +10,8 @@ MCPACK_FILES = \
 	ui/pause_screen.json \
 	ui/play_screen.json \
 	ui/start_screen.json \
-	ui/ui_template_tabs.json
+	ui/ui_template_tabs.json \
+	ui/world_templates_screen.json
 
 EXTRA_DIST= \
 	ui-tweaks.svg

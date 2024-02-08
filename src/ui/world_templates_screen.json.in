@@ -1,0 +1,10 @@
+// -*- javascript -*-
+{
+    "namespace": "world_templates",
+
+    // Remove "Featured Realms Plus Templates". Owned templates are shown
+    // separately.
+    "world_list_grids_stack/store_panel": {
+        "ignored": true
+    }
+}
