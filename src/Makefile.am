@@ -10,7 +10,6 @@ MCPACK_FILES = \
 	ui/pause_screen.json \
 	ui/play_screen.json \
 	ui/start_screen.json \
-	ui/stonecutter_screen.json \
 	ui/ui_template_tabs.json
 
 EXTRA_DIST= \
